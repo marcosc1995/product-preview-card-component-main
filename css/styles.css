@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+.card {
+  background-color: hsl(0, 0%, 100%);
+  /* padding: 25px; */
+  margin: 25px;
+  display: flex;
+  width: 610px;
+  height: 450px;
+  border-radius: 15px;
+}
+.card-img {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 0 0 15px;
+  width: 50%;
+  height: 100%;
+}
+.card-text {
+  font-family: Fraunces;
+  padding: 25px;
+  width: 50%;
+}
+.card-text h3 {
+  font-family: Montserrat;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin: 10px 0;
+  color: hsl(228, 12%, 48%);
+}
+.card-text h2 {
+  margin: 25px 0;
+  font-size: 39px;
+}
+.card-text p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: Montserrat;
+}
+.prices {
+  display: flex;
+  font-family: Fraunces;
+  margin: 15px 0;
+}
+.new {
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+.old {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: line-through;
+  margin-left: 15px;
+  color: hsl(228, 12%, 48%);
+}
+.card-text button {
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+}
+.icon {
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 300px;
+    height: 600px;
+    flex-direction: column;
+  }
+  .card-img {
+    width: 100%;
+    height: 250px;
+    background-image: url("../images/image-product-mobile.jpg");
+    border-radius: 15px 15px 0 0;
+  }
+  .card-text {
+    width: 250px;
+  }
+  .card-text h2 {
+    font-size: 29px;
+  }
+}
